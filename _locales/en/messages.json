@@ -5,16 +5,10 @@
 	"description": {
 		"message": "View passwords hidden behind asterisks"
 	},
-	"commandViewPassword": {
-		"message": "View password"
+	"context_menu": {
+		"message": "&Reveal password"
 	},
-	"contribute": {
-		"message": "Make a donation"
-	},
-	"contributeTranslation": {
-		"message": "Translate to your language"
-	},
-	"contributeBugReport": {
-		"message": "Report a bug"
+	"shortcut": {
+		"message": "Reveal password"
 	}
 }

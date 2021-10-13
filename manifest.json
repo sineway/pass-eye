@@ -23,19 +23,19 @@
 	],
 	"background": {
 		"scripts": [
-			"/node_modules/webextension-polyfill/dist/browser-polyfill.js",
-			"/background.js"
+			"node_modules/webextension-polyfill/dist/browser-polyfill.js",
+			"background.js"
 		],
 		"persistent": false
 	},
 	"browser_action": {},
 
 	"commands": {
-		"view_password": {
+		"reveal_password": {
 			"suggested_key": {
 				"default": "Alt+Shift+P"
 			},
-			"description": "__MSG_commandViewPassword__"
+			"description": "__MSG_shortcut__"
 		}
 	}
 }
