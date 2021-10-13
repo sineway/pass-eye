@@ -3,7 +3,7 @@
 		"message": "PassEye"
 	},
 	"description": {
-		"message": "View passwords hidden behind asterisks"
+		"message": "Revealing passwords in login and registration forms"
 	},
 	"context_menu": {
 		"message": "&Reveal password"
