@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="utf-8">
-
-		<title>Test</title>
-
-		<script src="./test.js"></script>
+		<title>
+			Password fields
+		</title>
 	</head>
 	<body>
-		<p>Standard</p>
+		<p>
+			Standard
+		</p>
 		<input type="password" value="qwerty123">
-
-		<p>Custom</p>
+		<p>
+			Custom
+		</p>
 		<x-password></x-password>
-
-		<p>Framed</p>
+		<script>
+			customElements.define("x-password", class extends HTMLElement {
+				constructor() {
+					super()
+					this.attachShadow({
+						mode: "open"
+					}).innerHTML = `
+						<input type="password" value="qwerty123">
+					`
+				}
+			})
+		</script>
+		<p>
+			Framed
+		</p>
 		<iframe src="test.html" width="320" height="420"></iframe>
 	</body>
 </html>
