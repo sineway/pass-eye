@@ -1,4 +1,7 @@
 {
+	"name": {
+		"message": "PassEye"
+	},
 	"description": {
 		"message": "Раскрытие паролей в формах входа и регистрации"
 	},
