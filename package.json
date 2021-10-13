@@ -1,12 +1,12 @@
 {
-    "dependencies": {
-        "webextension-polyfill": "^0.6.0"
-    },
-    "devDependencies": {
-        "servor": "^4.0.2"
-    },
-    "scripts": {
-        "test": "servor './' 'test.html' 3000 --browse --reload",
-        "build": "zip 'build' -FS -r './' -i '_locales/*' 'icons/*' 'node_modules/webextension-polyfill/*' 'background.*' 'content.js' 'manifest.json'"
-    }
+	"dependencies": {
+		"webextension-polyfill": "^0.6.0"
+	},
+	"devDependencies": {
+		"servor": "^4.0.2"
+	},
+	"scripts": {
+		"test": "servor './' 'test.html' 3000 --browse --reload",
+		"build": "zip 'build' -FS -r './' -i '_locales/*' 'icons/*' 'node_modules/webextension-polyfill/*' 'background.*' 'content.js' 'manifest.json'"
+	}
 }
