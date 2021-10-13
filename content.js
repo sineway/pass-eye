@@ -1,7 +1,4 @@
-(() => {
-	let { frameElement } = window
-	console.debug({ frameElement })
-
+{
 	let roots = [document]
 
 	document.querySelectorAll("*").forEach(item => {
@@ -9,8 +6,6 @@
 			roots.push(item.shadowRoot)
 		}
 	})
-	console.debug({ roots })
-
 	roots.forEach(root => {
 		root.querySelectorAll(`input[type~="password"]`).forEach(input => {
 			if (input.type == "password") {
@@ -20,5 +15,5 @@
 			}
 		})
 	})
-})()
+}
 
