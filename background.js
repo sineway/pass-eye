@@ -15,7 +15,7 @@ browser.browserAction.onClicked.addListener(
 	revealPassword
 )
 
-browser.runtime.onInstalled.addListener(() => {
+browser.contextMenus.removeAll().then(() => {
 	browser.contextMenus.create({
 		id: "reveal_password",
 		contexts: ["editable"],
