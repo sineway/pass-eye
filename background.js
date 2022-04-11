@@ -3,9 +3,12 @@ let revealPassword = async () => {
 		currentWindow: true,
 		active: true
 	})
-	chrome.tabs.executeScript(tab.id, {
-		file: "content.js",
-		allFrames: true
+	chrome.scripting.executeScript({
+		files: ["content.js"],
+		target: {
+			tabId: tab.id,
+			allFrames: true
+		}
 	}).catch(
 		console.error
 	)
