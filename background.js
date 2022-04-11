@@ -15,7 +15,7 @@ chrome.action.onClicked.addListener(
 	revealPassword
 )
 
-chrome.contextMenus.removeAll().then(() => {
+chrome.contextMenus.removeAll(() => {
 	chrome.contextMenus.create({
 		id: "reveal_password",
 		contexts: ["editable"],
