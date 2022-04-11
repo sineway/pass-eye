@@ -1,3 +1,7 @@
+importScripts(
+	"/node_modules/webextension-polyfill/dist/browser-polyfill.js"
+)
+
 let revealPassword = async () => {
 	let [tab] = await browser.tabs.query({
 		currentWindow: true,
@@ -11,7 +15,7 @@ let revealPassword = async () => {
 	)
 }
 
-browser.browserAction.onClicked.addListener(
+browser.action.onClicked.addListener(
 	revealPassword
 )
 
