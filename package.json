@@ -1,12 +1,9 @@
 {
-	"dependencies": {
-		"webextension-polyfill": "^0.6.0"
-	},
 	"devDependencies": {
 		"servor": "^4.0.2"
 	},
 	"scripts": {
 		"test": "servor './' 'test.html' 3000 --browse --reload",
-		"build": "zip 'dist' --filesync --recurse-paths './' --include '_locales/*' 'icons/*' 'node_modules/webextension-polyfill/*' 'background.js' 'content.js' 'manifest.json'"
+		"build": "zip 'dist' --filesync --recurse-paths './' --include '_locales/*' 'icons/*' 'background.js' 'content.js' 'manifest.json'"
 	}
 }
