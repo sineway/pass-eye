@@ -4,6 +4,6 @@
 	},
 	"scripts": {
 		"test": "servor './' 'test.html' 3000 --browse --reload",
-		"build": "zip 'dist' --filesync --recurse-paths './' --include '_locales/*' 'icons/*' 'background.js' 'content.js' 'manifest.json'"
+		"build": "zip 'firefox' --filesync --recurse-paths './' --include '_locales/*' 'icons/*' 'background.js' 'content.js' 'manifest.json'"
 	}
 }
