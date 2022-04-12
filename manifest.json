@@ -33,7 +33,7 @@
 	"commands": {
 		"reveal_password": {
 			"suggested_key": {
-				"default": "Alt+Shift+P"
+				"default": "Shift+Alt+R"
 			},
 			"description": "__MSG_shortcut__"
 		}
